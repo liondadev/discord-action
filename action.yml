@@ -1,4 +1,8 @@
 name: Execute Discord Webhook
+author: Lion
+branding:
+  icon: message-square
+  color: blue
 description: Send a message to a discord webhook
 inputs:
   webhook-url:
