@@ -1,0 +1,17 @@
+name: Execute Discord Webhook
+description: Send a message to a discord webhook
+inputs:
+  webhook-url:
+    description: The webhook URL
+    required: true
+  message:
+    description: The message to send
+    required: true
+    default: No Message Provided
+
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.webhook-url }}
+    - ${{ inputs.message }}
